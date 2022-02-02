@@ -5,6 +5,7 @@ import CartIcon from "../microComponents/CartIcon";
 
 const Header =  () => {
 
+   
     return (
         <>
         <header className="App-header">
@@ -12,8 +13,9 @@ const Header =  () => {
             <div className="brandWrapper">MagimArt</div>
              <div className="bigTitleWrap">
                     <p>
-                        buy your favarite pokemon
+                        buy your favarite pokemon 
                     </p>
+                    
              </div>
             <div className="miniCartAddFavouriteWrapper">
                 <div className="addTowishList"> 

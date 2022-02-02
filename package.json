@@ -1,5 +1,5 @@
 {
-  "name": "my-interview",
+  "name": "buy-yo-pokemon",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -27,6 +27,11 @@
       "react-app/jest"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Magimart/buy-pokemon.git"
+  },
+  "homepage": "",
   "browserslist": {
     "production": [
       ">0.2%",

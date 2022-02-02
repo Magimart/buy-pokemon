@@ -3,7 +3,6 @@ import AddTofavorite from "../microComponents/AddTofavarite";
 import CartIcon from "../microComponents/CartIcon";
 
 
-
 const Header =  () => {
 
     return (

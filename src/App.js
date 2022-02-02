@@ -9,7 +9,6 @@ function App() {
           const baseUrl = 'https://pokeapi.co/api/v2/pokemon';
           const[allPokemons, setAllPokemons] = useState([])
 
-
           const fetchAllPokemons = async () => {
 
             const res = await fetch(`${baseUrl}?limit=200`)

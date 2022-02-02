@@ -1,0 +1,400 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #342d287c;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* pokodeck */
+
+/* header _________________________*/
+.NavWrapper{
+  position: relative;
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ /* cart  */
+ .miniCartAddFavouriteWrapper{
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   width:fit-content;
+ }
+ .adToFavoriteWrapper{
+  position: relative;
+  height: 1em;
+  width: 2em;
+  top: .9em;
+  /* background-color: rgba(34, 139, 34, 0.37); */
+  padding: 0 .5em 0 .5em;
+  cursor: pointer;
+ }
+ .cartIconWrapper{
+  position: relative;
+  height: 3em;
+  width: 3em;
+  top: .5em;
+  padding: 0 .5em 0 .5em;
+  color: rgb(243, 163, 14);
+  cursor: pointer;
+ }
+.pokeWrapper{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: aqua;
+  flex: auto;
+  display: flex;
+  flex-flow: row;
+}
+.sliderWrapper{
+position: relative;
+display: flex;
+width: 100%;
+height: 100%;
+background-color: rgb(46, 60, 87);
+}
+
+.leftWrapper{
+ position: relative;
+ height: 100vh;
+ width: 40%;
+ background-color: rgba(7, 70, 49, 0.486);
+ flex-wrap: wrap;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+/* search bar */
+.searchPokeWrapper{
+display: flex;
+height: 2em;
+padding: 0.5em;
+align-items: center;
+width: 100%;
+flex-direction: row;
+} 
+
+.cardWrapper{
+position: relative;
+height: 50vh;
+width: 100%;
+background-color: rgba(151, 163, 155, 0.678);
+display: flex;
+flex-direction: column;
+border-radius: .4em;
+padding: .5em;
+box-shadow:black ;
+}
+
+.cardGroup{
+  position: relative;
+  padding: 0em;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.imageWrapper{
+position: relative;
+height: 6em;
+background-color: azure;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+/* padding-top: 1em; */
+justify-content: center;
+}
+.pokeCardImage{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.contentWrapper{
+position: relative;
+height: 140px;
+width: 100%;
+background-color: rgba(255, 235, 205, 0.26);
+display:flex;
+flex-direction: column;    
+}
+.footerWrapper{
+  position: relative;
+  height: 70px;
+  width: 100%;
+  background-color: cadetblue;
+  width: 100%;
+
+}
+.prevNextBtnWrapper{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  bottom: -3em;
+  justify-content: center;
+
+}
+.prev{
+  position: relative;
+  display: flex;
+  justify-content: end;
+  bottom: 4em;
+  background-color: cyan;
+  height: 1.5em;
+  width: max-content;
+  padding-right: 1em;
+  padding-left: 1em;
+  cursor: pointer;
+  margin-right: 4em;
+  border-radius: 1em;
+}
+.next{
+  position: relative;
+  display: flex;
+  justify-content: end;
+  bottom: 4em;
+  background-color: cyan;
+  height: 1.5em;
+  width: max-content;
+  padding-right: 1em;
+  padding-left: 1em;
+  cursor: pointer;
+  border-radius: 1em;
+  box-shadow:  rgba(7, 70, 49, 0.486);
+}
+
+/* view section */
+.rightWrapper{
+  position: relative;
+  height: 100vh;
+  width: 60%;
+  background-color: rgba(136, 165, 197, 0.486);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pokeId{
+  color: yellow;
+  display: inline-flex;
+  flex-direction: row; 
+}
+
+.viewWrapper{
+position: relative;
+height: 100%;
+width: 100%;
+background-color: rgba(151, 163, 155, 0.678);
+display: flex;
+flex-direction: column;
+box-shadow:black ;
+}
+
+ .viewGroup{
+  position: relative;
+  width: 100%;
+  height: 70%;
+}
+
+.viewImageWrapper{
+position: relative;
+height: 70%;
+background-color: azure;
+padding: 0.6em;
+padding-bottom: 3em;
+padding-top: 2em;
+}
+
+.viewHeaderWrapper{
+position: relative;
+height: 15%;
+width: 100%;
+background-color: rgba(255, 235, 205, 0.26);
+}
+
+.viewContentWrapper{
+position: relative;
+height: 30%;
+width: 100%;
+background-color: rgba(155, 104, 28, 0.26);
+}
+
+.sectionWrapper{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.sectionMovesWrapper{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  justify-content: space-around;
+}
+.buttonWrapper{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  top: -2em;
+}
+.buyBtnWrapper{
+position: relative;
+background-color: darkslategray;
+color:aliceblue;
+cursor: pointer;
+}
+.addBtnWrapper{
+  position: relative;
+  border-color: rgb(196, 199, 28);
+  color:aliceblue;
+  background-color: rgb(128, 14, 14);
+ padding: .3em 1em .3em 1em;
+ cursor: pointer;
+}
+.pokeMoves{
+  color: rgb(206, 209, 16);
+  font-size: 1em;
+}
+.arrayWrap{
+  color: #fff;
+  padding: .4em;
+}
+.pokeWeight{
+  color: rgb(192, 176, 176);
+  background-color: rgb(31, 28, 26);
+  padding-left: 0.5em; 
+  padding-right: 0.5em; 
+}
+.infoOne{
+  position: relative;
+}
+.infoTwo{
+  position: relative;
+}
+.infoThree{
+  position: relative;
+  background-color: rgba(0, 206, 209, 0.596);
+  padding: .1em .3em .1em .3em;
+}
+.infFour{
+  position: relative;
+  background-color: cadetblue;
+  padding: .1em;
+  color: rgb(241, 14, 158);
+}
+.viewFooterWrapper{
+  position: relative;
+  height: 15%;
+  width: 100%;
+  background-color: cadetblue;
+  bottom: 0;
+  margin-top: 1em;
+
+} 
+
+.img{
+  height: 85px;
+  max-width: 120px;
+  overflow: 'hidden';
+  display: 'block';
+  width: '100%';
+}
+
+/* slider */
+
+.example-container {
+width: 100vw;
+height: 100vh;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.next,
+.prev {
+top: calc(40% - 10px);
+position: absolute;
+background: #000;
+border-radius: 30px;
+width: 35px;
+height: 35px;
+display: flex;
+justify-content: center;
+align-items: center;
+user-select: none;
+cursor: pointer;
+font-weight: bold;
+color:antiquewhite;
+font-size: 18px;
+z-index: 11;
+}
+
+.next {
+right: 8px;
+}
+
+.prev {
+left: 8px;
+transform: scale(1);
+}
+
+.refresh {
+padding: 10px;
+position: absolute;
+background: rgba(0, 0, 0, 0.4);
+border-radius: 10px;
+width: 20px;
+height: 20px;
+top: 10px;
+right: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+

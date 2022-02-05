@@ -15,6 +15,7 @@ export const SwapSlide = ({allPokemons}) => {
 
 
 
+   allPokemons && console.log(allPokemons)
     useEffect(() => {   
             setLimitedPokes(() => allPokemons && allPokemons.sort(() => 0.5 - Math.random()).slice(0, 20))    
        },[allPokemons, selectedPokes])
@@ -33,7 +34,6 @@ export const SwapSlide = ({allPokemons}) => {
         )
       }
      
-
 
       return ( 
             <>
